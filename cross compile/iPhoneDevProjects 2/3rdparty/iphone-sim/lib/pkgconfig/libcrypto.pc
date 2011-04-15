@@ -1,0 +1,11 @@
+prefix=/Users/xw_max/Desktop/libssh2/iPhoneDevProjects/3rdparty/iphone-sim
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: OpenSSL-libcrypto
+Description: OpenSSL cryptography library
+Version: 0.9.8o
+Requires: 
+Libs: -L${libdir} -lcrypto 
+Cflags: -I${includedir} 

@@ -1,0 +1,16 @@
+###########################################################################
+# libssh2 installation details
+###########################################################################
+
+prefix=/Users/lun/Desktop/LIBSSH2_from_xie/iPhoneDevProjects/3rdparty/iphone-sim
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libssh2
+URL: http://www.libssh2.org/
+Description: Library for SSH based connunication
+Version: 1.2.7
+Libs: -L${libdir} -lssh2 -arch i386 -mmacosx-version-min=10.5 -I/Users/lun/Desktop/LIBSSH2_from_xie/iPhoneDevProjects/3rdparty/iphone-sim/include -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk -L/Users/lun/Desktop/LIBSSH2_from_xie/iPhoneDevProjects/3rdparty/iphone-sim/lib -L/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.1.sdk/usr/lib 
+Libs.private: 
+Cflags: -I${includedir}

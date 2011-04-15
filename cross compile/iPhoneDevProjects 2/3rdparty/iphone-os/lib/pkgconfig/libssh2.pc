@@ -1,0 +1,16 @@
+###########################################################################
+# libssh2 installation details
+###########################################################################
+
+prefix=/Users/xw_max/Desktop/libssh2/iPhoneDevProjects/3rdparty/iphone-os
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libssh2
+URL: http://www.libssh2.org/
+Description: Library for SSH based connunication
+Version: 1.2.7
+Libs: -L${libdir} -lssh2 -arch armv6 -pipe -no-cpp-precomp -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk -I/Users/xw_max/Desktop/libssh2/iPhoneDevProjects/3rdparty/iphone-os/include -I/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/usr/inclue -L/Users/xw_max/Desktop/libssh2/iPhoneDevProjects/3rdparty/iphone-os/lib -L/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/usr/lib 
+Libs.private: 
+Cflags: -I${includedir}

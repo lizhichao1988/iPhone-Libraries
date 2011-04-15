@@ -1,0 +1,3 @@
+./config --prefix=$prefix
+#$host 
+
